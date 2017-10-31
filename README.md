@@ -12,7 +12,7 @@ This is a portable and OS independent system, therefore installation is practica
 Steps:
 1. Download required files from [our download page](http://bmidb.cs.stonybrook.edu/easergeocoder/download)
 2. [Start the Solr](README.md#start-the-solr)
-3. Make the input file according to our [format](README.md#input-file-format).
+3. Make the input file according to our [format](README.md#input-file).
 4. Use jar file for running the program. Check out the [example](README.md#running-example)
 
 That is it! We have encapsulated everything in order to make it as simple as possible.
@@ -30,25 +30,10 @@ In this project Apache Solr has been used as database for indexing/storing all i
 ### API
 The jar file could take following parameters.
 
-#### 1. Mode
-This is used to assign the input and output format. Different modes are explained in details here.
 
-#### Program Modes
-
-This program works in four modes. Although, the functionality of the program is more or less the same, these modes are useful for different scenarios.
-
-1. [**Comparision Mode**](README.md#comparision-mode) For measuring accuracy of this system given a list of addresses with their geolocations as the ground truth.
-
-2. [**Searching Mode**](README.md#searching-mode) To extract geolocations for list of addresses, most common mode.
-
-3. [**Detailed Debug Mode**](README.md#detailed-debug-mode) Generates the entire search information for all sources.
-
-4. [**Full Features Mode**](README.md#full-features-mode) If you want to look get the features to be trained in decision tree for all addresses for all sources, choose mode 4, which is fully feature mode.
-
-
-
-#### 2. Inputfilename
-This is used to designate the file address you want this program to geocode. Currently we are only supporting csv format with headers as follow - Latitude, Longitude, Address 1, Address 2, City, County, State, Zip code, Country. There are four requirements for the input file listed below.
+#### 1. Input File
+This mandatory parameter is the address of input file with the format in below. 
+Currently we are only supporting csv format with headers as follow - Latitude, Longitude, Address 1, Address 2, City, County, State, Zip code, Country. There are four requirements for the input file listed below.
 
 1. Must have meaningful building number.
 2. Must have zip code.
@@ -69,7 +54,25 @@ Strong Memorial Hospital,601 Elmwood Ave, Rochester, NY 14642.
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |43.122824|-77.625281|Strong Memorial Hospital|601 Elmwood Ave|Rochester||NY|14642|USA|
 
-There are two samples in folder "input", check them out.
+There are samples of input files format at our [download page](http://bmidb.cs.stonybrook.edu/easergeocoder/download), check them out.
+
+
+
+#### 2. Mode
+This is used to assign the input and output format. Different modes are explained in details here.
+
+#### Program Modes
+
+This program works in four modes. Although, the functionality of the program is more or less the same, these modes are useful for different scenarios.
+
+1. [**Comparision Mode**](README.md#comparision-mode) For measuring accuracy of this system given a list of addresses with their geolocations as the ground truth.
+
+2. [**Searching Mode**](README.md#searching-mode) To extract geolocations for list of addresses, most common mode.
+
+3. [**Detailed Debug Mode**](README.md#detailed-debug-mode) Generates the entire search information for all sources.
+
+4. [**Full Features Mode**](README.md#full-features-mode) If you want to look get the features to be trained in decision tree for all addresses for all sources, choose mode 4, which is fully feature mode.
+
 
 
 #### 3. NumberOfThreads
