@@ -13,7 +13,7 @@ Steps:
 1. Download required files from [our download page](http://bmidb.cs.stonybrook.edu/easergeocoder/download)
 2. [Start the Solr](README.md#start-the-solr)
 3. Make the input file according to our [format](README.md#input-file-format).
-4. Use jar file for running the program. Check out the [example](README.md#jar-file-example)
+4. Use jar file for running the program. Check out the [example](README.md#running-example)
 
 That is it! We have encapsulated everything in order to make it as simple as possible.
 In case you are facing any problems, please see [troubleshooting](README.md#troubleshooting) section.
