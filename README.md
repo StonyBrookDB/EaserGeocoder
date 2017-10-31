@@ -214,10 +214,11 @@ It means, first 2000 addresses in inputfilename file will be geocoded, by 10 thr
 
 ### Troubleshooting
 
-+ Solr Problems
+1. Solr Problems
 
 
 Solr is not OS independent, make sure the right command (solr or solr.cmd) is used. 
 
 If you get exception that solr didn’t start in 30 seconds, when you start solr first time in your computer. Then you need to stop solr and start it again, exception should be cleared.
+If you encountered any other exception, you should download [Apache Solr](http://lucene.apache.org/solr/mirrors-solr-latest-redir.html) based on your system, then replace the example/cloud/ folder of our [Solr](http://bmidb.cs.stonybrook.edu/easergeocoder/download) with new version you have downloaded. 
 
