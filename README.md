@@ -6,21 +6,20 @@ Project description and why we have done this is summarized here:
 
 http://bmidb.cs.stonybrook.edu/projects/biggeocoding
 
-## Short Version
-
-Download required files from [our download page](http://bmidb.cs.stonybrook.edu/easergeocoder/download), then follow instractions in below.
+## Installation
+This is a portable and OS independent system, therefore installation is practically just downloading and running the system.
 
 Steps:
-1. Download and unzip the zip file
+1. Download required files from [our download page](http://bmidb.cs.stonybrook.edu/easergeocoder/download)
 2. [Start the Solr](README.md#start-the-solr)
-3. Make input file according to our [format](README.md#input-file-format).
-4. Use jar file or edu.stonybrook.cs.bmidb.biggeocoding.multithreading.MulthithreaderJar.java for running the program. Check out the [example](README.md#jar-file-example)
+3. Make the input file according to our [format](README.md#input-file-format).
+4. Use jar file for running the program. Check out the [example](README.md#jar-file-example)
 
 That is it! We have encapsulated everything in order to make it as simple as possible.
 In case you are facing any problems, please see [troubleshooting](README.md#troubleshooting) section.
 
 
-## Long Version
+## Instructions - Long Version
 
 
 ### Solr 
