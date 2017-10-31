@@ -19,7 +19,7 @@ That is it! We have encapsulated everything in order to make it as simple as pos
 In case you are facing any problems, please see [troubleshooting](README.md#troubleshooting) section.
 
 
-## Instructions - Long Version
+## System Description
 
 
 ### Solr 
